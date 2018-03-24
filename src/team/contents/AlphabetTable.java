@@ -4,8 +4,10 @@ import java.util.Hashtable;
 
 public class AlphabetTable {
 
+	static Hashtable<String, Integer> table;
+	
 	public static void main(String args[]) {
-		Hashtable<String, Integer> table = new Hashtable<String, Integer>();
+		table = new Hashtable<String, Integer>();
 		table.put("A", 0);
 		table.put("B", 1);
 		table.put("C", 2);
@@ -32,9 +34,11 @@ public class AlphabetTable {
 		table.put("X", 23);
 		table.put("Y", 24);
 		table.put("Z", 25);
-		
-		System.out.println(table.get("P"));
+		table.put(" ", null);
 	}
-	
+		
+	public int getHashValue(String string) {
+		return table.get(string);
+	}
 	
 }
