@@ -6,7 +6,7 @@ public class AlphabetTable {
 
 	static Hashtable<String, Integer> table;
 	
-	public static void main(String args[]) {
+	public static void init_table() {
 		table = new Hashtable<String, Integer>();
 		table.put("A", 0);
 		table.put("B", 1);
@@ -34,10 +34,14 @@ public class AlphabetTable {
 		table.put("X", 23);
 		table.put("Y", 24);
 		table.put("Z", 25);
-		table.put(" ", null);
 	}
 		
-	public int getHashValue(String string) {
+	/**
+	 * 
+	 * @param string
+	 * @return
+	 */
+	public static int getHashValue(String string) {
 		return table.get(string);
 	}
 	
