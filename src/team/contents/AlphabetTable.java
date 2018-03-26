@@ -22,7 +22,7 @@ public class AlphabetTable {
 		inputTable.put("F", 5);
 		inputTable.put("f", 5);
 		inputTable.put("G", 6);
-		inputTable.put("f", 6);
+		inputTable.put("g", 6);
 		inputTable.put("H", 7);
 		inputTable.put("h", 7);
 		inputTable.put("I", 8);
